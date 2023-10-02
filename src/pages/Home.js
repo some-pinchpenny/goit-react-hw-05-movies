@@ -17,10 +17,6 @@ export default function Home() {
   const page = Number(searchParams.get('page')) || 1;
 
   useEffect(() => {
-    if (!trendingMovies) {
-      return;
-    }
-
     async function getTrendMovie() {
       try {
         setIsLoading(true);
